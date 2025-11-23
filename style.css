@@ -121,7 +121,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .heart:hover {
@@ -133,7 +133,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .download:hover {

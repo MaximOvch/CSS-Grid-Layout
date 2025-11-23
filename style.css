@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+.delius-unicase-regular {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-auto-rows: 370px;
+}
+
+.card {
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    background-size: 115%;
+}
+
+.bg1 {
+    background-image: url(images/image-1.jpg);
+}
+
+.bg2 {
+    background-image: url(images/image-2.jpg);
+}
+
+.bg3 {
+    background-image: url(images/image-3.jpg);
+}
+
+.bg4 {
+    background-image: url(images/image-4.jpg);
+}
+
+.bg5 {
+    background-image: url(images/image-5.jpg);
+}
+
+.bg6 {
+    background-image: url(images/image-6.jpg);
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+h2 {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+b,
+time {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+b {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+time {
+    color: #E0E0E0;
+}
+
+button {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: #E0E0E033;
+    background-color: #E0E0E0;
+    opacity: 0.3;
+}
+
+.buttons {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.heart {
+    background-image: url(images/svg/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity: 0.5;
+}
+
+.heart:hover {
+    opacity: 1;
+}
+
+.download {
+    background-image: url(images/svg/download.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity: 0.5;
+}
+
+.download:hover {
+    opacity: 1;
+}
+
+
+.bg11 {
+    background-image: url(images/image-11.jpg);
+}
+
+.bg12 {
+    background-image: url(images/image-12.jpg);
+}
+
+.bg13 {
+    background-image: url(images/image-13.jpg);
+}
+
+.bg14 {
+    background-image: url(images/image-14.jpg);
+}
+
+.bg15 {
+    background-image: url(images/image-15.jpg);
+}
+
+.bg16 {
+    background-image: url(images/image-16.jpg);
+}
+
+
+
+.bg20 {
+    background-image: url(images/image-20.png);
+}
+
+.bg21 {
+    background-image: url(images/image-21.jpg);
+}
+
+.bg22 {
+    background-image: url(images/image-22.jpg);
+}
+
+.bg32 {
+    background-image: url(images/image-32.jpg);
+}
+
+.bg42 {
+    background-image: url(images/image-42.jpg);
+}
+
+.bg52 {
+    background-image: url(images/image-52.jpg);
+}
+
+.bg62 {
+    background-image: url(images/image-62.jpg);
+}
+
+.bg72 {
+    background-image: url(images/image-72.jpg);
+}
+
+.bg82 {
+    background-image: url(images/image-82.jpg);
+}
+
+.bg92 {
+    background-image: url(images/image-92.jpg);
+}
+
+
+
+
+
+
+/*
+.card {
+    position: relative; /* Необходим для позиционирования псевдоэлемента и кнопок */
+
+/* Устанавливаем фоновое изображение и базовый размер 
+    background-image: url('images/image-2.jpg'); /* Замените на ваше изображение 
+    background-size: cover; 
+    background-position: center;
+    
+    overflow: hidden; /* Обрезаем изображение, которое выходит за границы при масштабировании 
+    border-radius: 20px;
+    height: 370px; /* Пример высоты 
+    width: 370px;  /* Пример ширины */
+
+/* Плавный переход для масштабирования фона 
+    transition: background-size 0.3s ease;
+}
+
+/* 1. Создаем градиент с помощью ::before 
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Накладываем градиент снизу вверх (например, для текста с именем) 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 50%);
+    opacity: 1; /* Видимость по умолчанию */
+
+/* Плавный переход для исчезновения градиента 
+    transition: opacity 0.3s ease;
+}
+
+/* 2. Скрываем кнопки по умолчанию 
+.card .buttons {
+    position: absolute;
+    top: 10px; /* Позиционируем сверху 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    opacity: 0; /* Делаем невидимыми 
+    pointer-events: none; /* Кнопки не реагируют на клики, пока невидимы */
+
+/* Плавный переход для появления кнопок 
+    transition: opacity 0.3s ease, pointer-events 0.3s ease;
+}
+
+/* --- СОСТОЯНИЕ НАВЕДЕНИЯ --- 
+
+
+/* При наведении: убираем градиент (делаем его прозрачным) 
+.card:hover::before {
+    opacity: 0;
+
+
+/* При наведении: показываем кнопки 
+.card:hover .buttons {
+    opacity: 1;
+    pointer-events: auto; /* Кнопки снова кликабельны */
